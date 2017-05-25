@@ -45,7 +45,7 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
     private View searchUnderline;
     private TextView tvSearchClean;
     private View viewSearchOutside;
-
+    private String keyword="请输入关键字";
     private View view;
     //动画
     private CircularRevealAnim mCircularRevealAnim;
@@ -93,7 +93,8 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
         searchUnderline = (View) view.findViewById(R.id.search_underline);
         tvSearchClean = (TextView) view.findViewById(R.id.tv_search_clean);
         viewSearchOutside = (View) view.findViewById(R.id.view_search_outside);
-
+        //设置提示
+        etSearchKeyword.setHint(keyword);
         //实例化动画效果
         mCircularRevealAnim = new CircularRevealAnim();
         //监听动画
@@ -151,11 +152,11 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
     }
 
     /**
-     *
+     * 设置关键字
      * @param keyword
      */
     public void setKeywordHint(String keyword){
-        etSearchKeyword.setHint(keyword);
+      keyword = keyword;
     }
     /**
      * 监听键盘按键
