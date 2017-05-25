@@ -6,6 +6,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
+import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.DisplayMetrics;
@@ -94,6 +95,7 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
         tvSearchClean = (TextView) view.findViewById(R.id.tv_search_clean);
         viewSearchOutside = (View) view.findViewById(R.id.view_search_outside);
         //设置提示
+        SpannableString s = new SpannableString(keyword);
         etSearchKeyword.setHint(keyword);
         //实例化动画效果
         mCircularRevealAnim = new CircularRevealAnim();
