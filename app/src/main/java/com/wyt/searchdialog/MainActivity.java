@@ -32,10 +32,11 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
         setSupportActionBar(toolbar);
 
         searchFragment = SearchFragment.newInstance();
-
+        searchFragment.setKeywordHint("设置hint");
         toolbar.setOnMenuItemClickListener(this);
 
         searchFragment.setOnSearchClickListener(this);
+
 
     }
 

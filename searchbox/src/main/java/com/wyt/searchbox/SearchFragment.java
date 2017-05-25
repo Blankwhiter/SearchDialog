@@ -46,7 +46,7 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
     private View searchUnderline;
     private TextView tvSearchClean;
     private View viewSearchOutside;
-    private String keyword="请输入关键字";
+    private  static String keyword="请输入关键字";
     private View view;
     //动画
     private CircularRevealAnim mCircularRevealAnim;
@@ -155,10 +155,10 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
 
     /**
      * 设置关键字
-     * @param keyword
+     * @param key
      */
-    public void setKeywordHint(String keyword){
-      keyword = keyword;
+    public  void setKeywordHint(String key ){
+      keyword = key ;
     }
     /**
      * 监听键盘按键
