@@ -58,5 +58,8 @@ How to use
 ```java
   searchFragment.show(getSupportFragmentManager(),SearchFragment.TAG);
 ```
- 
+第四句 , 设置搜索框提示:
+ ```java
+   searchFragment.setKeywordHint("你需要设置的提示");
+ ```
 
