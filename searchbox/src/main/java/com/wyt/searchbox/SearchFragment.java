@@ -151,6 +151,13 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
     }
 
     /**
+     *
+     * @param keyword
+     */
+    public void setKeywordHint(String keyword){
+        etSearchKeyword.setHint(keyword);
+    }
+    /**
      * 监听键盘按键
      */
     @Override
