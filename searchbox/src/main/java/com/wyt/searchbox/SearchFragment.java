@@ -96,7 +96,7 @@ public class SearchFragment extends DialogFragment implements DialogInterface.On
         viewSearchOutside = (View) view.findViewById(R.id.view_search_outside);
         //设置提示
         SpannableString s = new SpannableString(keyword);
-        etSearchKeyword.setHint(keyword);
+        etSearchKeyword.setHint(s);
         //实例化动画效果
         mCircularRevealAnim = new CircularRevealAnim();
         //监听动画
